@@ -1,0 +1,27 @@
+# Robots.txt for videotron.web.id
+User-agent: *
+Allow: /
+
+# AI Crawlers & Search Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://videotron.web.id/sitemap.xml
