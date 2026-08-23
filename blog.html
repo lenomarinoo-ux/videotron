@@ -39,15 +39,18 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:wght@0,400;0,500;0,600;0,700&display=swap"
     rel="stylesheet">
+
+  <!-- Preload Critical LCP Image -->
+  <link rel="preload" href="assets/img/blog/cara-memilih-pitch-pixxel.webp" as="image" fetchpriority="high">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -157,7 +160,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
             <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog-hover">
               <div class="position-relative overflow-hidden">
-                <img src="assets/img/blog/cara-memilih-pitch-pixxel.webp" class="card-img-top" alt="Tips Memilih Videotron" style="height: 250px; object-fit: cover;">
+                <img src="assets/img/blog/cara-memilih-pitch-pixxel.webp" class="card-img-top" alt="Tips Memilih Videotron" style="height: 250px; object-fit: cover;" width="400" height="250" fetchpriority="high" decoding="async">
                 <span class="badge bg-primary position-absolute top-0 start-0 m-3 rounded-pill px-3 py-2 shadow-sm">Edukasi</span>
               </div>
               <div class="card-body p-4 d-flex flex-column">
@@ -324,13 +327,13 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 

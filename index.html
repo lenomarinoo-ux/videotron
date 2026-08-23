@@ -43,15 +43,19 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:wght@0,400;0,500;0,600;0,700&family=Raleway:wght@0,400;0,500;0,600;0,700;0,800&display=swap"
     rel="stylesheet">
+
+  <!-- Preload Critical LCP Image -->
+  <link rel="preload" href="assets/img/education/videotron-indoor.webp" as="image" fetchpriority="high">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -182,11 +186,11 @@
       <div class="hero-bg-glow hero-glow-1"></div>
       <div class="hero-bg-glow hero-glow-2"></div>
 
-      <div class="container position-relative z-2" data-aos="fade-up" data-aos-delay="100">
+      <div class="container position-relative z-2">
 
         <div class="hero-block">
           <div class="row align-items-center g-4 g-xl-5">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="col-lg-6">
               <div class="hero-copy">
                 <div class="top-badge">
                   <span class="live-pulse"></span>
@@ -239,10 +243,11 @@
               </div>
             </div>
 
-            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-lg-6">
               <div class="hero-visual">
                 <img src="assets/img/education/videotron-indoor.webp"
-                  alt="Vendor LED Videotron Indoor &amp; Outdoor Korporat" class="img-fluid campus-photo">
+                  alt="Vendor LED Videotron Indoor &amp; Outdoor Korporat" class="img-fluid campus-photo" width="640"
+                  height="480" fetchpriority="high" decoding="async">
                 <div class="accred-card">
                   <i class="bi bi-patch-check-fill"></i>
                   <div>
@@ -331,7 +336,8 @@
         <div class="row g-5 align-items-stretch">
           <div class="col-lg-5" data-aos="fade-right" data-aos-delay="150">
             <div class="campus-showcase">
-              <img src="assets/img/education/about.webp" alt="Tentang Vendor Videotron" class="img-fluid">
+              <img src="assets/img/education/about.webp" alt="Tentang Vendor Videotron" class="img-fluid" width="600"
+                height="450" loading="lazy" decoding="async">
               <div class="experience-badge" style="animation: float-bob 3s ease-in-out infinite;">
                 <span class="years">10+</span>
                 <span class="label">Tahun Pengalaman</span>
@@ -477,7 +483,8 @@
             <div class="program-card">
               <div class="card-thumb">
                 <img src="assets/img/produk/produk-videotron-indoor.webp" alt="Videotron Indoor" class="img-fluid"
-                  style="height: 250px; object-fit: cover; width: 100%;">
+                  style="height: 250px; object-fit: cover; width: 100%;" width="400" height="250" loading="lazy"
+                  decoding="async">
               </div>
               <div class="card-body-content">
                 <span class="degree-type">Premium Display</span>
@@ -494,7 +501,8 @@
             <div class="program-card">
               <div class="card-thumb">
                 <img src="assets/img/produk/produk-videotron-outdoor.webp" alt="Videotron Outdoor" class="img-fluid"
-                  style="height: 250px; object-fit: cover; width: 100%;">
+                  style="height: 250px; object-fit: cover; width: 100%;" width="400" height="250" loading="lazy"
+                  decoding="async">
               </div>
               <div class="card-body-content">
                 <span class="degree-type">Weatherproof IP65</span>
@@ -511,7 +519,8 @@
             <div class="program-card">
               <div class="card-thumb">
                 <img src="assets/img/produk/produk-digital-signage.webp" alt="Custom LED" class="img-fluid"
-                  style="height: 250px; object-fit: cover; width: 100%;">
+                  style="height: 250px; object-fit: cover; width: 100%;" width="400" height="250" loading="lazy"
+                  decoding="async">
               </div>
               <div class="card-body-content">
                 <span class="degree-type">Creative Solutions</span>
@@ -546,7 +555,7 @@
             <div class="tour-card">
               <div class="tour-image">
                 <img src="assets/img/paket/sewa-videotron-event-konser-musik.webp" alt="Paket Event &amp; Sewa Harian"
-                  class="img-fluid" loading="lazy">
+                  class="img-fluid" loading="lazy" width="500" height="300" decoding="async">
                 <div class="tour-badge">Sewa Harian</div>
                 <div class="tour-price">Mulai Rp 5 Jt</div>
               </div>
@@ -556,7 +565,7 @@
                   <span class="duration"><i class="bi bi-calendar-event"></i> Harian / Mingguan</span>
                   <span class="group-size"><i class="bi bi-aspect-ratio"></i> Fleksibel</span>
                 </div>
-                <p>Solusi sewa videotron indoor maupun outdoor untuk kebutuhan konser, pernikahan, pameran, dan acara
+                <p>Solusi sewa videotron indoor maupun outdoor untuk kebutuhan konser, pernikahan, pameran, and acara
                   peluncuran produk.</p>
                 <div class="tour-highlights">
                   <span>Setup Cepat</span>
@@ -583,7 +592,7 @@
             <div class="tour-card">
               <div class="tour-image">
                 <img src="assets/img/paket/pemasangan-led-screen-auditorium-kantor.webp" alt="Paket Korporat Indoor"
-                  class="img-fluid" loading="lazy">
+                  class="img-fluid" loading="lazy" width="500" height="300" decoding="async">
                 <div class="tour-badge limited">Paling Diminati</div>
                 <div class="tour-price">Mulai Rp 15 Jt</div>
               </div>
@@ -593,7 +602,7 @@
                   <span class="duration"><i class="bi bi-building"></i> Instalasi Tetap</span>
                   <span class="group-size"><i class="bi bi-award"></i> Garansi 2 Tahun</span>
                 </div>
-                <p>Pemasangan layar LED resolusi tinggi (P1.8 - P3) yang ideal untuk ruang direksi, lobby utama, dan
+                <p>Pemasangan layar LED resolusi tinggi (P1.8 - P3) yang ideal untuk ruang direksi, lobby utama, and
                   auditorium perusahaan Anda.</p>
                 <div class="tour-highlights">
                   <span>Layar Resolusi Tinggi</span>
@@ -620,7 +629,8 @@
             <div class="tour-card">
               <div class="tour-image">
                 <img src="assets/img/paket/layar-videotron-luar-ruangan-ip65-waterproof.webp"
-                  alt="Paket Instansi Outdoor" class="img-fluid" loading="lazy">
+                  alt="Paket Instansi Outdoor" class="img-fluid" loading="lazy" width="500" height="300"
+                  decoding="async">
                 <div class="tour-badge new">Heavy Duty</div>
                 <div class="tour-price">Mulai Rp 20 Jt</div>
               </div>
@@ -713,7 +723,8 @@
                 <div class="row g-0 align-items-center">
                   <div class="col-sm-4">
                     <div class="reviewer-photo">
-                      <img src="assets/img/person/person-m-5.webp" alt="Budi Santoso" class="img-fluid" loading="lazy">
+                      <img src="assets/img/person/person-m-5.webp" alt="Budi Santoso" class="img-fluid" loading="lazy"
+                        width="80" height="80" decoding="async">
                     </div>
                   </div>
                   <div class="col-sm-8">
@@ -748,7 +759,8 @@
                 <div class="row g-0 align-items-center">
                   <div class="col-sm-4">
                     <div class="reviewer-photo">
-                      <img src="assets/img/person/person-f-3.webp" alt="Sarah Wijaya" class="img-fluid" loading="lazy">
+                      <img src="assets/img/person/person-f-3.webp" alt="Sarah Wijaya" class="img-fluid" loading="lazy"
+                        width="80" height="80" decoding="async">
                     </div>
                   </div>
                   <div class="col-sm-8">
@@ -782,7 +794,8 @@
                 <div class="row g-0 align-items-center">
                   <div class="col-sm-4">
                     <div class="reviewer-photo">
-                      <img src="assets/img/person/person-m-14.webp" alt="Ahmad Rifai" class="img-fluid" loading="lazy">
+                      <img src="assets/img/person/person-m-14.webp" alt="Ahmad Rifai" class="img-fluid" loading="lazy"
+                        width="80" height="80" decoding="async">
                     </div>
                   </div>
                   <div class="col-sm-8">
@@ -817,7 +830,8 @@
                 <div class="row g-0 align-items-center">
                   <div class="col-sm-4">
                     <div class="reviewer-photo">
-                      <img src="assets/img/person/person-f-9.webp" alt="Dian Sastro" class="img-fluid" loading="lazy">
+                      <img src="assets/img/person/person-f-9.webp" alt="Dian Sastro" class="img-fluid" loading="lazy"
+                        width="80" height="80" decoding="async">
                     </div>
                   </div>
                   <div class="col-sm-8">
@@ -851,8 +865,8 @@
                 <div class="row g-0 align-items-center">
                   <div class="col-sm-4">
                     <div class="reviewer-photo">
-                      <img src="assets/img/person/person-f-7.webp" alt="Hendra Gunawan" class="img-fluid"
-                        loading="lazy">
+                      <img src="assets/img/person/person-f-7.webp" alt="Hendra Gunawan" class="img-fluid" loading="lazy"
+                        width="80" height="80" decoding="async">
                     </div>
                   </div>
                   <div class="col-sm-8">
@@ -899,7 +913,8 @@
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
             <div class="faq-sidebar">
               <div class="faq-image">
-                <img src="assets/img/ilustrasion/ilustrasion.webp" alt="Videotron FAQ" class="img-fluid" loading="lazy">
+                <img src="assets/img/ilustrasion/ilustrasion.webp" alt="Videotron FAQ" class="img-fluid" loading="lazy"
+                  width="500" height="350" decoding="async">
               </div>
               <div class="contact-box">
                 <h3><i class="bi bi-headset"></i> Butuh Bantuan?</h3>
@@ -1158,17 +1173,17 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
