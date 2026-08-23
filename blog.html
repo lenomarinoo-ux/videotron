@@ -43,7 +43,7 @@
     rel="stylesheet">
 
   <!-- Preload Critical LCP Image -->
-  <link rel="preload" href="assets/img/blog/cara-memilih-pitch-pixxel.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/img/blog/digital-signage-toko-retail-mal-mewah.webp" as="image" fetchpriority="high">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -55,18 +55,62 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Structured Data JSON-LD (Blog & Breadcrumb) -->
+  <!-- Structured Data JSON-LD (CollectionPage & Breadcrumb) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Blog",
-        "@id": "https://videotron.web.id/blog.html#blog",
+        "@type": "CollectionPage",
         "name": "Blog Vendor Videotron",
-        "description": "Pusat informasi & artikel edukasi tentang teknologi LED Videotron Indoor dan Outdoor.",
-        "publisher": {
-          "@id": "https://videotron.web.id/#organization"
+        "url": "https://videotron.web.id/blog.html",
+        "description": "Kumpulan artikel edukatif, panduan memilih videotron indoor & outdoor, tips perawatan, serta berita teknologi LED videotron terkini.",
+        "inLanguage": "id-ID",
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Daftar Artikel Videotron",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://videotron.web.id/pixel-pitch.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://videotron.web.id/ip65-outdoor.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://videotron.web.id/retail-digital-signage.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "url": "https://videotron.web.id/maintenance-videotron.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "url": "https://videotron.web.id/outdoor-maintenance.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "url": "https://videotron.web.id/apa-itu-videotron.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "url": "https://videotron.web.id/sejarah-videotron.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "url": "https://videotron.web.id/fungsi-videotron.html"
+            }
+          ]
         }
       },
       {
@@ -132,7 +176,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Blog & Edukasi</h1>
+              <h1>Blog &amp; Edukasi</h1>
               <p class="mb-0">Kumpulan artikel edukatif, panduan memilih videotron indoor &amp; outdoor, tips perawatan, serta berita teknologi LED videotron terkini.</p>
             </div>
           </div>
@@ -156,11 +200,65 @@
         
         <div class="row gy-5">
           
-          <!-- Post 1 (Cara Memilih Pixel Pitch) -->
+          <!-- Post 1 (5 Fungsi Utama Videotron - Terbaru) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
             <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog-hover">
               <div class="position-relative overflow-hidden">
-                <img src="assets/img/blog/cara-memilih-pitch-pixxel.webp" class="card-img-top" alt="Tips Memilih Videotron" style="height: 250px; object-fit: cover;" width="400" height="250" fetchpriority="high" decoding="async">
+                <img src="assets/img/blog/digital-signage-toko-retail-mal-mewah.webp" class="card-img-top" alt="5 Fungsi Utama Videotron untuk Branding dan Komunikasi Bisnis" style="height: 250px; object-fit: cover;" width="400" height="250" fetchpriority="high" decoding="async">
+                <span class="badge bg-primary position-absolute top-0 start-0 m-3 rounded-pill px-3 py-2 shadow-sm">Branding &amp; Bisnis</span>
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h4 class="card-title fw-bold mb-3" style="font-size: 1.3rem;">5 Fungsi Utama Videotron untuk Branding dan Komunikasi Bisnis</h4>
+                <p class="card-text text-muted mb-4 flex-grow-1">Pelajari 5 fungsi utama videotron untuk meningkatkan branding, awareness, dan keterikatan audiens bisnis Anda.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                  <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>22 Agu 2026</small>
+                  <a href="fungsi-videotron.html" class="text-primary fw-bold text-decoration-none">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2 (Sejarah Perkembangan Videotron) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog-hover">
+              <div class="position-relative overflow-hidden">
+                <img src="assets/img/blog/sejarah-papan-skor-lampu-pijar-stadion-lama.webp" class="card-img-top" alt="Sejarah Perkembangan Videotron" style="height: 250px; object-fit: cover;" width="400" height="250" decoding="async">
+                <span class="badge bg-primary position-absolute top-0 start-0 m-3 rounded-pill px-3 py-2 shadow-sm">Sejarah &amp; Teknologi</span>
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h4 class="card-title fw-bold mb-3" style="font-size: 1.3rem;">Sejarah Perkembangan Videotron: Dari Lampu Pijar hingga LED COB</h4>
+                <p class="card-text text-muted mb-4 flex-grow-1">Telusuri sejarah perkembangan videotron dari era papan skor lampu pijar hingga teknologi LED COB modern.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                  <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>22 Agu 2026</small>
+                  <a href="sejarah-videotron.html" class="text-primary fw-bold text-decoration-none">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3 (Apa Itu Videotron) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog-hover">
+              <div class="position-relative overflow-hidden">
+                <img src="assets/img/blog/apa-itu-videotron-indoor-boardroom.webp" class="card-img-top" alt="Apa Itu Videotron - Panduan Lengkap" style="height: 250px; object-fit: cover;" width="400" height="250" decoding="async">
+                <span class="badge bg-primary position-absolute top-0 start-0 m-3 rounded-pill px-3 py-2 shadow-sm">Edukasi</span>
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h4 class="card-title fw-bold mb-3" style="font-size: 1.3rem;">Apa Itu Videotron? Pengertian, Fungsi, dan Jenisnya untuk Bisnis</h4>
+                <p class="card-text text-muted mb-4 flex-grow-1">Temukan pengertian videotron, jenis indoor &amp; outdoor, serta fungsi utamanya untuk mengoptimalkan branding visual bisnis Anda.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                  <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>22 Agu 2026</small>
+                  <a href="apa-itu-videotron.html" class="text-primary fw-bold text-decoration-none">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4 (Cara Memilih Pixel Pitch) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog-hover">
+              <div class="position-relative overflow-hidden">
+                <img src="assets/img/blog/cara-memilih-pitch-pixxel.webp" class="card-img-top" alt="Tips Memilih Videotron" style="height: 250px; object-fit: cover;" width="400" height="250" decoding="async">
                 <span class="badge bg-primary position-absolute top-0 start-0 m-3 rounded-pill px-3 py-2 shadow-sm">Edukasi</span>
               </div>
               <div class="card-body p-4 d-flex flex-column">
@@ -174,8 +272,8 @@
             </div>
           </div>
 
-          <!-- Post 2 (Mengenal IP65) -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <!-- Post 5 (Mengenal IP65) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog-hover">
               <div class="position-relative overflow-hidden">
                 <img src="assets/img/blog/instalasi-videotron-outdoor.webp" class="card-img-top" alt="Teknologi Videotron Outdoor" style="height: 250px; object-fit: cover;">
@@ -192,8 +290,8 @@
             </div>
           </div>
 
-          <!-- Post 3 (5 Tren Digital Signage) -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <!-- Post 6 (5 Tren Digital Signage) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog-hover">
               <div class="position-relative overflow-hidden">
                 <img src="assets/img/blog/tren-digital-signage.webp" class="card-img-top" alt="Custom LED Display" style="height: 250px; object-fit: cover;">
@@ -210,8 +308,8 @@
             </div>
           </div>
 
-          <!-- Post 4 (Pentingnya Perawatan Berkala) -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <!-- Post 7 (Pentingnya Perawatan Berkala) -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
             <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog-hover">
               <div class="position-relative overflow-hidden">
                 <img src="assets/img/blog/perawatan-videotron.webp" class="card-img-top" alt="Maintenance Videotron" style="height: 250px; object-fit: cover;">
