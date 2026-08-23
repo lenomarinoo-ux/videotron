@@ -13079,3 +13079,430 @@ section,
 #produk .program-card:hover .card-link i {
   transform: translateX(5px);
 }
+
+/* --- Recent Posts & Blog Styling (Premium Dark Theme) --- */
+
+/* Radial Gradient Header */
+.bg-radial-green {
+  background: radial-gradient(circle at center, color-mix(in srgb, var(--accent-color), transparent 85%) 0%, var(--background-color) 100%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Section Background */
+.recent-posts.bg-light {
+  background-color: var(--background-color) !important;
+}
+
+/* Card Styling */
+.card-blog-hover {
+  background-color: var(--surface-color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-blog-hover:hover {
+  transform: translateY(-10px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 50%) !important;
+  box-shadow: 0 15px 35px rgba(195, 57, 72, 0.15) !important; /* Glow shadow matching accent color */
+}
+
+.card-blog-hover img {
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-blog-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* Text and Links inside Card */
+.recent-posts .card-title {
+  color: var(--heading-color) !important;
+  transition: color 0.3s ease;
+}
+
+.card-blog-hover:hover .card-title {
+  color: var(--accent-color) !important;
+}
+
+.recent-posts .card-text {
+  color: var(--default-color) !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.recent-posts .border-top {
+  border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.recent-posts .text-muted {
+  color: #b0b0b0 !important;
+}
+
+.recent-posts .text-primary {
+  color: var(--accent-color) !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.recent-posts .text-primary:hover {
+  color: color-mix(in srgb, var(--accent-color), #ffffff 20%) !important;
+  text-shadow: 0 0 10px rgba(195, 57, 72, 0.3);
+}
+
+/* Premium Badges Styling */
+.recent-posts .badge {
+  font-weight: 600 !important;
+  backdrop-filter: blur(5px);
+}
+
+.recent-posts .badge.bg-dark {
+  background-color: rgba(30, 30, 30, 0.75) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.recent-posts .badge.bg-primary {
+  background-color: rgba(195, 57, 72, 0.15) !important;
+  color: var(--accent-color) !important;
+  border: 1px solid rgba(195, 57, 72, 0.4);
+}
+
+.recent-posts .badge.bg-info {
+  background-color: rgba(13, 202, 240, 0.15) !important;
+  color: #0dcaf0 !important;
+  border: 1px solid rgba(13, 202, 240, 0.4);
+}
+
+.recent-posts .badge.bg-success {
+  background-color: rgba(25, 135, 84, 0.15) !important;
+  color: #198754 !important;
+  border: 1px solid rgba(25, 135, 84, 0.4);
+}
+
+.recent-posts .badge.bg-warning {
+  background-color: rgba(255, 193, 7, 0.15) !important;
+  color: #ffc107 !important;
+  border: 1px solid rgba(255, 193, 7, 0.4);
+}
+
+.recent-posts .badge.bg-danger {
+  background-color: rgba(220, 53, 69, 0.15) !important;
+  color: #dc3545 !important;
+  border: 1px solid rgba(220, 53, 69, 0.4);
+}
+
+.recent-posts .badge.bg-secondary {
+  background-color: rgba(108, 117, 125, 0.15) !important;
+  color: #6c757d !important;
+  border: 1px solid rgba(108, 117, 125, 0.4);
+}
+
+/* --- Upgraded Blog Details Page Styling (Premium Dark Theme) --- */
+
+.article-wrapper {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .article-wrapper {
+    padding: 20px;
+  }
+}
+
+.article-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.article-img img {
+  transition: transform 0.5s ease;
+}
+
+.article-img:hover img {
+  transform: scale(1.02);
+}
+
+.article-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.article-header h1 {
+  color: var(--heading-color) !important;
+}
+
+.article-header .meta-info {
+  color: #b0b0b0 !important;
+}
+
+.article-header .meta-info i {
+  color: var(--accent-color) !important;
+}
+
+/* Article Content Typography */
+.article-content h2 {
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 8px;
+}
+
+.article-content h3 {
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.article-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--default-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Ensure text-muted inside article-content is highly visible in dark theme */
+.article-content .text-muted {
+  color: #b8b8b8 !important;
+}
+
+.article-content ul, .article-content ol {
+  margin-bottom: 1.8rem;
+  padding-left: 1.8rem;
+}
+
+.article-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--default-color);
+  margin-bottom: 0.6rem;
+}
+
+/* Table of Contents Widget (Collapsible) */
+.table-of-contents {
+  background-color: rgba(20, 29, 46, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-left: 4px solid var(--accent-color) !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-of-contents .toc-toggle-btn {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: none;
+  width: 100%;
+  padding: 15px 20px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--heading-color) !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.table-of-contents .toc-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.table-of-contents .toc-toggle-btn::after {
+  content: "\f282";
+  font-family: "bootstrap-icons";
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+  color: var(--accent-color);
+}
+
+.table-of-contents .toc-toggle-btn:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+.table-of-contents .toc-content {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table-of-contents a {
+  color: #c0c0c0;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  padding: 4px 0;
+}
+
+.table-of-contents a:hover {
+  color: var(--accent-color) !important;
+  transform: translateX(3px);
+}
+
+/* Read Also Box */
+.read-also {
+  background: linear-gradient(to right, rgba(195, 57, 72, 0.15), transparent) !important;
+  border-left: 4px solid var(--accent-color) !important;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.read-also .text-dark {
+  color: var(--heading-color) !important;
+}
+
+.read-also a {
+  color: var(--accent-color) !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.read-also a:hover {
+  color: color-mix(in srgb, var(--accent-color), #ffffff 20%) !important;
+  text-decoration: underline;
+}
+
+/* Author Box & Socials */
+.author-box {
+  background-color: var(--surface-color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-left: 4px solid var(--accent-color) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.author-box h4 {
+  color: var(--heading-color) !important;
+}
+
+.author-box p.text-primary {
+  color: var(--accent-color) !important;
+}
+
+.author-box p.text-muted {
+  color: var(--default-color) !important;
+}
+
+.author-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.author-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.author-socials a:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(195, 57, 72, 0.3);
+}
+
+/* FAQ Accordion Section */
+.article-faq h3 {
+  color: var(--heading-color) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.article-faq .accordion-item {
+  background-color: var(--surface-color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.article-faq .accordion-button {
+  background-color: var(--surface-color) !important;
+  color: var(--heading-color) !important;
+  box-shadow: none !important;
+}
+
+.article-faq .accordion-button:not(.collapsed) {
+  color: var(--accent-color) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.article-faq .accordion-button::after {
+  filter: invert(1);
+}
+
+.article-faq .accordion-body {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  color: var(--default-color) !important;
+}
+
+/* Sidebar Styling */
+.sidebar .widget {
+  background-color: var(--surface-color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.sidebar .widget h5 {
+  color: var(--heading-color) !important;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+}
+
+.sidebar .related-item {
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.sidebar .related-item a {
+  color: var(--heading-color) !important;
+  transition: color 0.3s ease;
+}
+
+.sidebar .related-item a:hover {
+  color: var(--accent-color) !important;
+}
+
+.sidebar .related-item small {
+  color: #a0a0a0 !important;
+}
+
+/* CTA WhatsApp Widget */
+.sidebar .cta-widget {
+  background: linear-gradient(135deg, var(--accent-color) 0%, #7d1c26 100%) !important;
+  border: none !important;
+  box-shadow: 0 15px 35px rgba(195, 57, 72, 0.25) !important;
+}
+
+.sidebar .cta-widget h5 {
+  color: #ffffff !important;
+  border-bottom: none !important;
+  padding-bottom: 0;
+}
+
+.sidebar .cta-widget p {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.sidebar .cta-widget .btn-light {
+  background-color: #ffffff !important;
+  color: #7d1c26 !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.sidebar .cta-widget .btn-light:hover {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+}
