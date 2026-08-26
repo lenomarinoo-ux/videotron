@@ -53,7 +53,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Product & Detail Pages -->
+  <!-- Halaman Produk dan Detail -->
   <url>
     <loc>https://videotron.web.id/custom-curved-led.html</loc>
     <lastmod>2026-08-22</lastmod>
@@ -183,7 +183,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Informational & Utility Pages -->
+  <!-- Halaman Informasi dan Utilitas -->
   <url>
     <loc>https://videotron.web.id/campus-facilities.html</loc>
     <lastmod>2026-08-22</lastmod>
