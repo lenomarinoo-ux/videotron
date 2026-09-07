@@ -1076,24 +1076,35 @@ section,
   background-color: #10b981;
   border-radius: 50%;
   display: inline-block;
-  box-shadow: 0 0 12px #10b981;
-  animation: pulse-green 2s infinite;
+  position: relative;
+  box-shadow: 0 0 10px #10b981;
+}
+
+.hero .hero-block .hero-copy .top-badge .live-pulse::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background-color: #10b981;
+  animation: pulse-green 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: transform, opacity;
+  pointer-events: none;
 }
 
 @keyframes pulse-green {
   0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    transform: scale(0.9);
+    opacity: 0.8;
   }
 
   70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+    transform: scale(2.2);
+    opacity: 0;
   }
 
   100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    transform: scale(2.2);
+    opacity: 0;
   }
 }
 
@@ -1648,6 +1659,7 @@ section,
   text-align: center;
   line-height: 1.2;
   box-shadow: 0 8px 30px color-mix(in srgb, var(--accent-color), transparent 50%);
+  will-change: transform;
 }
 
 .about .campus-showcase .experience-badge .years {
@@ -11584,6 +11596,7 @@ section,
   z-index: 2;
   border-left: 4px solid var(--accent-color);
   animation: float-bob 3s ease-in-out infinite;
+  will-change: transform;
 }
 
 [data-theme="dark"] .accred-card {
@@ -11614,15 +11627,15 @@ section,
 
 @keyframes float-bob {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0px) translateZ(0);
   }
 
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-15px) translateZ(0);
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) translateZ(0);
   }
 }
 
@@ -12577,6 +12590,7 @@ section,
     left: 0;
     right: 0;
     background: linear-gradient(to top, rgba(15, 20, 29, 0.95) 0%, rgba(15, 20, 29, 0.6) 70%, transparent 100%);
+    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
   }
 }
@@ -12591,6 +12605,7 @@ section,
     position: relative !important;
     background: rgba(22, 28, 38, 0.98) !important;
     border-top: 1px solid rgba(195, 57, 72, 0.35) !important;
+    -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
     padding: 14px 16px !important;
   }
@@ -12839,6 +12854,7 @@ section,
   background: rgba(37, 211, 102, 0.45);
   z-index: -1;
   animation: waPulseRing 2s infinite;
+  will-change: transform, opacity;
 }
 
 @keyframes waPulseRing {
@@ -12943,8 +12959,8 @@ section,
 /* Category Card Design */
 #produk .program-card {
   background: rgba(22, 27, 38, 0.85);
-  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-top: 3px solid var(--accent-color);
   border-radius: 24px;
@@ -12997,8 +13013,8 @@ section,
   text-transform: uppercase;
   padding: 6px 14px;
   border-radius: 50px;
-  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
@@ -13155,6 +13171,7 @@ section,
 /* Premium Badges Styling */
 .recent-posts .badge {
   font-weight: 600 !important;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
 
