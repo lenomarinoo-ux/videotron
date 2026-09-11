@@ -184,18 +184,7 @@
   </url>
 
   <!-- Halaman Informasi dan Utilitas -->
-  <url>
-    <loc>https://videotron.web.id/campus-facilities.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://videotron.web.id/students-life.html</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
+
   <url>
     <loc>https://videotron.web.id/privacy.html</loc>
     <lastmod>2026-08-22</lastmod>
