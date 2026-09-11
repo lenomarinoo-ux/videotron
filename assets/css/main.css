@@ -13661,3 +13661,92 @@ section,
     margin: 0 auto 10px auto !important;
   }
 }
+
+/*--------------------------------------------------------------
+# Artikel Terbaru Section (Homepage)
+--------------------------------------------------------------*/
+.artikel-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.artikel-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(255,255,255,0.05);
+}
+.artikel-card .img-wrapper {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+}
+.artikel-card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.artikel-card:hover .img-wrapper img {
+  transform: scale(1.08);
+}
+.artikel-card .img-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(18, 18, 18, 0.9) 0%, transparent 60%);
+  pointer-events: none;
+}
+.artikel-card .badge-custom {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  padding: 6px 14px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.artikel-card .card-body {
+  padding: 1.8rem;
+}
+.artikel-card p.text-muted {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+.artikel-card .small.text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.artikel-card .article-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 12px 0 16px;
+}
+.artikel-card .article-title a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.artikel-card:hover .article-title a {
+  color: var(--accent-color);
+}
+.artikel-card .read-more-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: gap 0.3s ease, color 0.3s ease;
+}
+.artikel-card:hover .read-more-link {
+  gap: 12px;
+}
